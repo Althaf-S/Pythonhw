@@ -10,8 +10,8 @@ def fizzbizz(n):
     else :
       print(i)
 
-#n = int(input("Enter any number to do operations : "))
-#fizzbizz(n)
+n = int(input("Enter any number to do operations : "))
+fizzbizz(n)
 
 
 #program to find whether provided string is palindrome
@@ -24,31 +24,41 @@ def palindrome(s):
   else :
     print("The string you provided is not palindrome")
     
-#s = input("Enter your string to check if it is palindrome: ")
-#palindrome(s)
+s = input("Enter your string to check if it is palindrome: ")
+palindrome(s)
 
 
 
 #program to find whether provided string is pangaram
-def pangram(s):
-
-  w = ''
+def panagram(s):
   c = 0
 
-  for i in s:
-    if i != ' ':
-      w = w+i
-  w = w.lower()
+  
+  s = s.lower()
   alphabets = "abcdefghijklmnopqrstuvwxyz"
   for i in alphabets: 
-    if i in w:
+    if i in s:
       c += 1
   if c == len(alphabets):
-    print("Is pangarm")
+    print("Is panagarm")
   else :
     print("Not pangarm")
     
-#s = input("Enter your string here : ")     
-#pangram(s)
+s = input("Enter your string here to check if it is panagram: ")     
+panagram(s)
+
+#program to print the key value dictionary
+def freq(s):
+ dict = {} 
+ for i in s:
+   if i in dict:
+     dict[i] += 1
+   else:
+     dict[i] = 1
+  
+ print(dict)
+ 
+s = input("Enter your string : ")
+freq(s)
 
 
