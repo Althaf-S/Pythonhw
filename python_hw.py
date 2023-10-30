@@ -10,8 +10,8 @@ def fizzbizz(n):
     else :
       print(i)
 
-n = int(input("Enter any number to do operations : "))
-fizzbizz(n)
+#n = int(input("Enter any number to do operations : "))
+#fizzbizz(n)
 
 
 #program to find whether provided string is palindrome
@@ -24,8 +24,8 @@ def palindrome(s):
   else :
     print("The string you provided is not palindrome")
     
-s = input("Enter your string to check if it is palindrome: ")
-palindrome(s)
+#s = input("Enter your string to check if it is palindrome: ")
+#palindrome(s)
 
 
 
@@ -44,9 +44,11 @@ def pangram(s):
     if i in w:
       c += 1
   if c == len(alphabets):
-    print("Is palindrome")
+    print("Is pangarm")
   else :
-    print("Not palindrome")
+    print("Not pangarm")
     
-s = input("Enter your string here : ")     
-pangram(s)
+#s = input("Enter your string here : ")     
+#pangram(s)
+
+
