@@ -1,11 +1,11 @@
 import unittest
-from python_hw import panagram
-from python_hw import palindrome
-from python_hw import freq
+from pythonhw import panagram
+from pythonhw import palindrome
+from pythonhw import freq
 
 class TestPanagram(unittest.TestCase):
     def testIsPanagram(self):
-        sentence = "the quick brown fox jumps over the lazy dog"
+        sentence = "the quick brown fox jumpes over the lazy dog"
         self.assertTrue(panagram(sentence))
     def testIsNotPanagram(self):
         sentence = "the quick brown fox jumped over the lazy dog"
@@ -41,6 +41,8 @@ class TestFreq(unittest.TestCase):
     def testNullInputDict(self):
         space = freq("")
         self.assertFalse(space)
-
+        
 if __name__ == "__main__":
-    unittest.main()
+  unittest.main()
+   
+        
