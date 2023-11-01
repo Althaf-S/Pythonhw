@@ -1,7 +1,12 @@
 import unittest
+<<<<<<< HEAD
 from pythonhw import panagram
 from pythonhw import palindrome
 from pythonhw import freq
+=======
+from python_hw import panagram
+from python_hw import palindrome
+>>>>>>> 4d1003c (Implementation of palindrome testing)
 
 class TestPanagram(unittest.TestCase):
     def testIsPanagram(self):
@@ -22,6 +27,7 @@ class TestPalindrome(unittest.TestCase):
         sentence = "abcde"
         self.assertFalse(palindrome(sentence))
     def testNullInput(self):
+<<<<<<< HEAD
         empty = palindrome("")
         self.assertTrue(empty)
     def testSingleInputPalindrome(self):
@@ -42,6 +48,15 @@ class TestFreq(unittest.TestCase):
         space = freq("")
         self.assertFalse(space)
         
+=======
+        sentence = palindrome("")
+        self.assertTrue(sentence)
+    def testSingleInputPalindrome(self):
+        sentence = palindrome("a")
+        self.assertTrue(sentence)
+
+
+>>>>>>> 4d1003c (Implementation of palindrome testing)
 if __name__ == "__main__":
   unittest.main()
    
